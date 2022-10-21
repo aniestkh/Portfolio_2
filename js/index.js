@@ -69,3 +69,10 @@ $(window).on('load', function(){
     }
 })
 
+
+$('.coffeetime').on('click', function(){
+    var phonww = $(window).width()
+    var phonht = $(window).height()
+    
+    alert('넓이'+phonww+'높이'+phonht)
+})
