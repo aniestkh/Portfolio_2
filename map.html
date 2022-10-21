@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/map.css">
-  <link rel="stylesheet" href="./css/rwdindex.css">
+  <link rel="stylesheet" href="./css/rwdmap.css">
   <script src="./js/prefixfree.min.js"> </script>
   <script src="./js/jquery-1.12.4.min.js"></script>
 </head>
@@ -18,25 +18,32 @@
   <header id="header">
     <div id="nav">
       <div class="logo">
-        <a href="index.html"><img src="./images/logo.png" alt=""></a>
+        <a href="index.html"><img src="/images/logo.png" alt=""></a>
       </div>
       <div class="navmenu">
+        <div class="resize_pack">
+          <span class="magnifyinggl"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <span class="menu_icon resize"><i class="fa-solid fa-bars"></i></span>
+          <span class="sns_icon resize"><i class="fa-solid fa-share-from-square"></i></span>
+        </div>
         <div class="searchbx">
           <input type="text" placeholder="검색어를 입력하세요">
         </div>
         <ul class="membership">
-          <li class="magnifyinggl"><i class="fa-solid fa-magnifying-glass"></i></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="join.html">Signin</a></li>
-          <li><a href="#">Myinfo</a></li>
+          <li class="hide_mem"><a href="#">Login</a></li>
+          <li class="hide_mem"><a href="join.html">Signin</a></li>
+          <li class="hide_mem"><a href="#">Myinfo</a></li>
           <ul class="sns">
-            <li> <a href="https://map.naver.com/v5/entry/place/1676749398?c=14128881.3119106,4513113.1139707,13,0,0,0,dh&placePath=%2Fhome"><i class="fa-solid fa-blog"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="hide_sns"> <a
+                href="https://map.naver.com/v5/entry/place/1676749398?c=14128881.3119106,4513113.1139707,13,0,0,0,dh&placePath=%2Fhome"><i
+                  class="fa-solid fa-blog"></i></a></li>
+            <li class="hide_sns"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li class="hide_sns"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
           </ul>
+          <li class="close"><i class="fa-solid fa-xmark"></i></li>
         </ul>
         <ul class="headmenu">
-          <li>Page1
+          <li class="">Page1
             <ul class="submenu">
               <li>메뉴1</li>
               <li>메뉴2</li>
@@ -44,10 +51,10 @@
               <li>메뉴4</li>
             </ul>
           </li>
-          <li><a href="menu.html">Menu</a>
+          <li class=""><a href="menu.html">Menu</a>
             <!-- <ul class="submenu"></ul> -->
           </li>
-          <li>Page3
+          <li class="">Page3
             <ul class="submenu">
               <li>123123</li>
               <li>123123</li>
@@ -55,7 +62,7 @@
               <li>123123</li>
             </ul>
           </li>
-          <li><a href="map.html">Map</a>
+          <li class=""><a href="map.html">Map</a>
             <!-- <ul class="submenu"></ul> -->
           </li>
         </ul>
