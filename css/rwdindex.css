@@ -23,6 +23,14 @@ homepc monitor : 1366*625
     position: relative;
   }
 
+#nav .logo {
+  display: flex;
+    width: 35%;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+}
+
   #nav .logo a {
     width: 100%;
   }
@@ -220,13 +228,13 @@ homepc monitor : 1366*625
     margin-left: 0;
   }
 
-
   #nav .navmenu .membership {
-    background: url(../images/postit.jpg) no-repeat;
+    background: url(/images/postit.jpg) no-repeat;
     background-size: 360% 220%;
     background-position: 37% 103%;
+    border: none;
   }
-
+  
   #nav .navmenu .membership.on {
     width: 30%;
     flex-direction: column;
@@ -268,24 +276,28 @@ homepc monitor : 1366*625
     bottom: 0;
     height: 350px;
     background: #eccfc3;
+    transition: all 0.5s 0.5s;
   }
 
   .navmenu .headmenu>li:nth-child(2) {
     bottom: 0;
     height: 270px;
     background: #ecb8a5;
+    transition: all 0.5s 0.4s;
   }
 
   .navmenu .headmenu>li:nth-child(3) {
     bottom: 0;
     height: 190px;
     background: #e49ab0;
+    transition: all 0.5s 0.3s;
   }
 
   .navmenu .headmenu>li:nth-child(4) {
     bottom: 0;
     height: 110px;
     background: #904c77;
+    transition: all 0.5s 0.2s;
   }
 
 
