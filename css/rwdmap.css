@@ -1,0 +1,217 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+/* 
+  영문: font-family: 'Poppins', sans-serif;
+  한글: font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* 
+homepc monitor : 1366*625
+*/
+@media screen and (max-width:400px) {
+
+    body,
+    html {
+        max-width: 1920px;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    /* header */
+    #header {
+        height: 90px;
+    }
+
+    #nav .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+    }
+
+    .magnifyinggl,
+    .sns_icon {
+        display: none;
+    }
+
+    .resize_pack span {
+        font-size: 30px;
+    }
+
+    #nav .navmenu {
+        margin-left: 0;
+    }
+
+    #nav .navmenu .membership {
+        width: 100%;
+        background: #f8e5ff;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        right: 0;
+        bottom: -100vh;
+        text-align: left;
+        display: block;
+        transform: translateY(0);
+        height: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s;
+    }
+
+    #nav .navmenu .membership.on {
+        /* width: 30%;
+        flex-direction: column;
+        line-height: 2;
+        height: 155px;
+        top: 105%;
+        right: 0;
+        align-items: normal;
+        padding: 3%; */
+        left: 0;
+    }
+
+    .navmenu .membership>li {
+        width: 30%;
+        font-size: 35px;
+        margin: 4% 5%;
+    }
+
+    .membership .sns {
+        width: 70%;
+        transform: translateY(0%);
+        position: absolute;
+        top: 2%;
+    }
+
+    .sns li {
+        font-size: 35px;
+    }
+
+    .navmenu .headmenu {
+        position: absolute;
+        top: 500%;
+        left: 0;
+        background: red;
+        width: 100%;
+        height: 100px;
+        /* display: flex; */
+        display: none;
+        flex-direction: column;
+    }
+
+    .navmenu .headmenu>li {
+
+        margin: 0 2%;
+        width: 20%;
+        position: relative;
+        line-height: 3em;
+        height: 100%;
+        cursor: pointer;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .headmenu>li.on {
+        transform: translateY(36%) translateX(0);
+        transform: translateX(-100%);
+    }
+
+    .navmenu .headmenu>li:nth-child(1).pnt {
+        height: 400px;
+    }
+
+    .navmenu .headmenu>li:nth-child(2).pnt {
+        height: 320px;
+    }
+
+    .navmenu .headmenu>li:nth-child(3).pnt {
+        height: 240px;
+    }
+
+    .navmenu .headmenu>li:nth-child(4).pnt {
+        height: 160px;
+    }
+
+    .resize_pack {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+    }
+
+    .resize_pack span {
+        width: auto;
+    }
+
+    .membership .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 25px !important;
+        line-height: 1.2;
+        width: 9% !important;
+        height: 5%;
+        border-radius: 50%;
+        background: #ddd;
+        border: 1px solid #000;
+        text-align: center;
+        padding: 1%;
+    }
+
+    .membership .hide_mem {
+        transform: translateY(-300%);
+    }
+
+
+    /* section */
+    /* article1 */
+    #art1_map {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #art1_map .bgcov {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+        opacity: 0.7;
+    }
+
+    #art1_map .map {
+        width: 90%;
+        height: 35%;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+
+    #art1_map .textbx {
+        width: 90%;
+        height: 40%;
+        top: 58%;
+        left: 0;
+        padding: 3%;
+    }
+
+    .textbx>span {
+        width: 100%;
+        font-size: 20px;
+        line-height: 1.7;
+        border-bottom: 2px solid #bbb;
+        display: block;
+    }
+}
