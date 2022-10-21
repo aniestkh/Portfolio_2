@@ -117,13 +117,12 @@ homepc monitor : 1366*625
 
   .navmenu .membership.on {
     display: flex !important;
-    flex-direction: column;
   }
 
   .navmenu .hide_mem {
     width: 20%;
     display: none;
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .navmenu .hide_mem.on {
@@ -223,13 +222,14 @@ homepc monitor : 1366*625
 
   
 #nav .navmenu .membership {
-  background: url(../images/postit.jpg) no-repeat;
+  background: url(/images/postit.jpg) no-repeat;
   background-size: 410% 270%;
   background-position: 34% 96%;
 }
 
 #nav .navmenu .membership.on {
   width: 30%;
+  flex-direction: column;
   line-height: 2;
   height: 155px;
   top: 105%;
@@ -344,6 +344,11 @@ homepc monitor : 1366*625
   top: 22%;
   height: 14%;
   background-position: 15% !important;
+  animation: coffeemoving 4s linear infinite;
+}
+
+.navmenu .hide_mem {
+  font-size: 25px;
 }
 
 }
