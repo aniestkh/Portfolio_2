@@ -225,7 +225,7 @@ html {
 
 /* section */
 #section {
-  background: url(../images/mainbg_ver1.jpg) no-repeat;
+  background: url(/images/mainbg_ver1.jpg) no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -276,7 +276,7 @@ html {
     width: 100%;
     top: 42%;
     height: 31%;
-    background: url(../images/coffeetime.gif) no-repeat;
+    background: url(/images/coffeetime.gif) no-repeat;
     background-size: 35%;
     background-position: 140%;
   left: 0;    
@@ -349,13 +349,13 @@ html {
 
 
 .slide-group .slide1 {
-  background-image: url(../images/mainbg.jpg) ;
+  background-image: url(/images/mainbg.jpg) ;
 }
 .slide-group .slide2 {
-  background-image: url(../images/subbg.jpg) ;
+  background-image: url(/images/subbg.jpg) ;
 }
 .slide-group .slide3 {
-  background-image: url(../images/cafebg.jpg) ;
+  background-image: url(/images/cafebg.jpg) ;
 }
 
 .slide-group .btn .prev {
@@ -417,7 +417,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background: url(../images/forouter6.png) no-repeat;
+  background: url(/images/forouter6.png) no-repeat;
   background-position: center;
   background-size: 50%;
   z-index: 9999;
@@ -430,7 +430,7 @@ html {
   width: 15%;
   height: 15%;
   font-size: 30px;
-  background: url(../images/coffeetime.png) no-repeat;
+  background: url(http://localhost:52330/images/coffeetime.png) no-repeat;
   background-size: 100% 100%;
   opacity: 0.8;
 }

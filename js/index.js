@@ -73,8 +73,17 @@ $(window).on('load', function(){
 $('.coffeetime').on('click', function(){
     // var phonww = $(window).width()
     // var phonht = $(window).height()
-    
     // alert('넓이'+phonww+'높이'+phonht)
-    
-    alert('쿠폰 증정! "coupon1234"')
+
+    alert('쿠폰증정!"coupon1234"')
+})
+
+$('.navmenu .headmenu>li').on('click', function(){
+
+    if(!$(this).hasClass('pnt')){
+        $(this).addClass('pnt').siblings().removeClass('pnt')
+    } else {
+        $(this).removeClass('pnt')
+    }
+
 })
