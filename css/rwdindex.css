@@ -223,7 +223,7 @@ homepc monitor : 1366*625
 
   
 #nav .navmenu .membership {
-  background: url(/images/postit.jpg) no-repeat;
+  background: url(../images/postit.jpg) no-repeat;
   background-size: 410% 270%;
   background-position: 34% 96%;
 }
