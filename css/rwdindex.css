@@ -223,7 +223,7 @@ homepc monitor : 1366*625
 
   
 #nav .navmenu .membership {
-  background: url(../images/postit.jpg) no-repeat;
+  background: url(/images/postit.jpg) no-repeat;
   background-size: 410% 270%;
   background-position: 34% 96%;
 }
@@ -255,7 +255,7 @@ homepc monitor : 1366*625
   .navmenu .headmenu>li {
     border-top: 1px solid #000;
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 3;
     background: #ddd;
     border-top-left-radius: 30px;
@@ -265,28 +265,28 @@ homepc monitor : 1366*625
 
   .navmenu .headmenu>li:nth-child(1) {
     bottom: 0;
-    height: 630px;
+    height: 320px;
     background: #eccfc3;
     transition: all 0.5s 0.2s;
   }
 
   .navmenu .headmenu>li:nth-child(2) {
     bottom: 0;
-    height: 480px;
+    height: 240px;
     background: #ecb8a5;
     transition: all 0.5s 0.4s;
   }
 
   .navmenu .headmenu>li:nth-child(3) {
     bottom: 0;
-    height: 330px;
+    height: 160px;
     background: #e49ab0;
     transition: all 0.5s 0.6s;
   }
 
   .navmenu .headmenu>li:nth-child(4) {
     bottom: 0;
-    height: 180px;
+    height: 80px;
     background: #904c77;
     transition: all 0.5s 0.8s;
   }
@@ -335,7 +335,7 @@ homepc monitor : 1366*625
 }
 
 .coffeetime {
-  top: 12%;
+  top: 22%;
   height: 14%;
   background-position: 30% !important;
 }
