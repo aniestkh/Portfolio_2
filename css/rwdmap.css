@@ -45,25 +45,22 @@ homepc monitor : 1366*625
     }
 
     #nav .navmenu .membership {
-        width: 100%;
         background: #f8e5ff;
         position: absolute;
-        top: 0;
+        top: 10%;
         left: 100%;
-        right: 0;
-        bottom: -100vh;
-        text-align: left;
-        display: block;
         transform: translateY(0);
-        height: auto;
+        height: 370%;
         text-align: center;
-        display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
         transition: all 0.5s;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        /* background: url(/images/cookie.png) no-repeat;
+        background-size: cover;
+        background-position: center; */
     }
 
     #nav .navmenu .membership.on {
@@ -81,14 +78,14 @@ homepc monitor : 1366*625
     .navmenu .membership>li {
         width: 30%;
         font-size: 35px;
-        margin: 4% 5%;
+        margin: 3% 5% 5%;
     }
 
     .membership .sns {
         width: 70%;
         transform: translateY(0%);
         position: absolute;
-        top: 2%;
+        top: 7%;
     }
 
     .sns li {
@@ -96,35 +93,42 @@ homepc monitor : 1366*625
     }
 
     .navmenu .headmenu {
-        position: absolute;
-        top: 500%;
-        left: 0;
-        background: red;
         width: 100%;
-        height: 100px;
-        /* display: flex; */
-        display: none;
+        position: absolute;
+        top: 370%;
+        left: -100%;
+        background: #f1c4a9;
+        height: 320%;
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        transition: all 0.5s;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        /* background: url(/images/cookie.png) no-repeat;
+        background-size: cover;
+        background-position: center; */
+    }
+
+    .navmenu .headmenu.on {
+        left: 0;
     }
 
     .navmenu .headmenu>li {
-
-        margin: 0 2%;
-        width: 20%;
-        position: relative;
-        line-height: 3em;
-        height: 100%;
-        cursor: pointer;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        font-family: 'Poppins', sans-serif;
+        width: 50%;
+        margin: 3% 0 9%;
+    font-size: 35px;
+    height: 7%;
+    line-height: 1;
     }
 
     .headmenu>li.on {
         transform: translateY(36%) translateX(0);
         transform: translateX(-100%);
+    }
+
+    .navmenu .headmenu>li:nth-child(4) {
+        transform: scale(1);
     }
 
     .navmenu .headmenu>li:nth-child(1).pnt {
@@ -161,7 +165,7 @@ homepc monitor : 1366*625
         font-size: 25px !important;
         line-height: 1.2;
         width: 9% !important;
-        height: 5%;
+        height: 10%;
         border-radius: 50%;
         background: #ddd;
         border: 1px solid #000;
@@ -169,9 +173,9 @@ homepc monitor : 1366*625
         padding: 1%;
     }
 
-    .membership .hide_mem {
+    /* .membership .hide_mem {
         transform: translateY(-300%);
-    }
+    } */
 
 
     /* section */
@@ -200,9 +204,9 @@ homepc monitor : 1366*625
     }
 
     #art1_map .textbx {
-        width: 90%;
+        width: 100%;
         height: 40%;
-        top: 58%;
+        top: 55%;
         left: 0;
         padding: 3%;
     }
