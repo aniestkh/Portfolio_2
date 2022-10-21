@@ -71,8 +71,10 @@ $(window).on('load', function(){
 
 
 $('.coffeetime').on('click', function(){
-    var phonww = $(window).width()
-    var phonht = $(window).height()
+    // var phonww = $(window).width()
+    // var phonht = $(window).height()
     
-    alert('넓이'+phonww+'높이'+phonht)
+    // alert('넓이'+phonww+'높이'+phonht)
+    
+    alert('쿠폰 증정! "coupon1234"')
 })
