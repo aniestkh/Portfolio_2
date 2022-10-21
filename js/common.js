@@ -73,28 +73,4 @@ $(window).on('resize', function () {
     monitorsize()
 })
 
-function memon(){
-    $('.membership, .membership .close').addClass('on')
-}
-function memoff(){
-    $('.membership, .membership .close').removeClass('on')
-}
 
-$('.menu_icon').on('click', function () {
-    if (!$('.navmenu .hide_mem').hasClass('on')) {
-        memon()
-        $('.navmenu .hide_mem').addClass('on')
-        $('.sns').removeClass('on')
-        $('.navmenu .searchbx').removeClass('on')
-    } else {
-        memoff()
-        $('.navmenu .hide_mem').removeClass('on')
-    }
-    
-    // if($(window).width()<=400 && $('.headmenu>li').hasClass('on')){
-    //     $('.headmenu>li').removeClass('on')
-    //     memoff()
-    // }else {
-    //     $('.headmenu>li').addClass('on')
-    // }
-})
