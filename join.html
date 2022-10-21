@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="./css/join.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="./js/prefixfree.min.js"> </script>
+  <script src="./js/jquery.mousewheel.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="logo">
+      <a href="./index.html"><img src="./images/logo.png" alt=""></a>
+    </div>
+    <h1>회원가입</h1>
+  </header>
+
+  <section id="section">
+    <form id="formlist">
+      <div class="id">
+        <label class="leftside">아이디</label>
+        <div class="rightside">
+          <input type="text" id="idbox" placeholder="">
+        </div>
+        <!-- <button class="check" >중복확인</button> -->
+      </div>
+      <div class="name">
+        <label class="leftside">이름</label>
+        <div class="rightside">
+          <input type="text" id="name">
+        </div>
+      </div>
+      <div class="passwd">
+        <label class="leftside">비밀번호</label>
+        <div class="rightside">
+          <input id="passbox" type="password" placeholder="대소문자 및 특수기호 포함하여 10자 이상">
+        </div>
+      </div>
+      <div class="passcheck">
+        <label class="leftside">비밀번호 확인</label>
+        <div class="rightside">
+          <input id="pwcheck" type="password" placeholder="비밀번호를 한번 더 입력해주세요">
+        </div>
+      </div>
+      <div class="passques">
+        <label class="leftside">비밀번호 질문</label>
+        <div class="rightside">
+          <input id="pwques" type="text" placeholder="비밀번호를 잊어버렸을 시 질문내용">
+        </div>
+      </div>
+      <div class="gender">
+        <label class="leftside">성별</label>
+        <div class="rightside">
+          <input id="male" type="radio" value="male" name="gender" checked>
+          <label for="male">남</label>
+          <input id="female" type="radio" value="female" name="gender">
+          <label for="female">여</label>
+        </div>
+      </div>
+      <div class="birth">
+        <label class="leftside">생년월일</label>
+        <div class="rightside">
+          <select name="birth" id="birth" class="year" type="number">
+          </select>
+          <select name="birth" id="birth" class="month" type="number">
+          </select>
+          <select name="birth" id="birth" class="day" type="number">
+          </select>
+        </div>
+      </div>
+      <div class="local">
+        <label class="leftside">거주지</label>
+        <div class="rightside">
+          <select name="local" id="local">
+            <option>선택</option>
+            <option value="서울">서울</option>
+            <option value="경기도">경기도</option>
+            <option value="북한">북한</option>
+          </select>
+        </div>
+      </div>
+      <div class="call">
+        <label class="leftside">전화번호</label>
+        <div class="rightside">
+          <select name="call" id="call">
+            <option value="LGU+">LGU+</option>
+            <option value="SKT">SKT</option>
+            <option value="KT">KT</option>
+            <option value="알뜰폰">알뜰폰</option>
+          </select>
+          <input type="text" placeholder="'-' 없이 입력해주세요">
+        </div>
+        <!-- <button class="callbtn">인증하기</button> -->
+      </div>
+      <div class="email">
+        <label class="leftside">이메일</label>
+        <div class="rightside">
+          <input type="text">
+          <span class="at">@</span>
+          <input type="text" name="elist" id="elist" disabled>
+          <select name="elist" id="emailselect">
+            <option value="yet">선택하기</option>
+            <option value="gmail.com">google</option>
+            <option value="naver.com">naver</option>
+            <option value="daum.net">daum</option>
+            <option value="self">직접입력</option>
+          </select>
+        </div>
+      </div>
+      <div class="post">
+        <label class="leftside">우편번호</label>
+        <div class="rightside">
+          <input type="text">
+          <span style="padding:0; font-weight:bold;">-</span>
+          <input type="text">
+          <!-- <button class="search">검색</button> -->
+        </div>
+      </div>
+      <div class="address">
+        <label class="leftside">주소</label>
+        <div class="rightside">
+          <input id="addbox" type="text" placeholder="상세주소를 입력하세요">
+        </div>
+      </div>
+      <div id="accordion">
+        <h3 class="leftside">개인정보 수집 및 이용 동의</h3>
+          <div class="chbx">
+            <div class="chbxp1"><input class="txtcheck" type="checkbox" value="agree"><span>동의하기</span></div>
+            <div class="txtbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur iure
+              doloribus. Porro unde, facere cum quae aliquam laudantium excepturi non quo nihil hic et placeat sunt
+              explicabo quia illum?</div>
+          </div>
+          <h3 class="leftside">개인정보 3자 제공 동의</h3>
+            <div class="chbx">
+              <div class="chbxp1"><input class="txtcheck" type="checkbox" value="agree"><span>동의하기</span></div>
+              <div class="txtbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur iure
+                doloribus. Porro unde, facere cum quae aliquam laudantium excepturi non quo nihil hic et placeat sunt
+                explicabo quia illum?</div>
+            </div>
+            <h3 class="leftside">약관 동의</h3>
+              <div class="chbx">
+                <div class="chbxp1"><input class="txtcheck" type="checkbox" value="agree"><span>동의하기</span></div>
+                <div class="txtbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum consequatur iure
+                  doloribus. Porro unde, facere cum quae aliquam laudantium excepturi non quo nihil hic et placeat sunt
+                  explicabo quia illum?</div>
+              </div>
+      </div>
+      <div class="btn">
+        <button class="submit" type="submit">가입하기</button>
+        <button class="reset" type="reset">취소</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="./js/common.js"></script>
+  <script src="./js/join.js"></script>
+</body>
+
+</html>
