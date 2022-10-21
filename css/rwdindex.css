@@ -223,7 +223,7 @@ homepc monitor : 1366*625
 
   
 #nav .navmenu .membership {
-  background: url(../images/postit.jpg) no-repeat;
+  background: url(/images/postit.jpg) no-repeat;
   background-size: 410% 270%;
   background-position: 34% 96%;
 }
@@ -308,9 +308,15 @@ homepc monitor : 1366*625
 
 .membership .close {
   position: absolute;
-  top: -9%;
-  right: 7%;
-  font-size: 25px;
+  top: -5%;
+  right: 89%;
+  font-size: 20px;
+  line-height: 1;
+  width: 20%;
+  height: 14%;
+  border-radius: 50%;
+  background: #ddd;
+  border: 1px solid #000;
 }
 
 /* section */
