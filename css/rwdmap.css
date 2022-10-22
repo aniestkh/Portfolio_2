@@ -50,7 +50,7 @@ homepc monitor : 1366*625
         top: 10%;
         left: 100%;
         transform: translateY(0);
-        height: 370%;
+        height: 390%;
         text-align: center;
         flex-direction: column;
         align-items: center;
@@ -58,7 +58,7 @@ homepc monitor : 1366*625
         transition: all 0.5s;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
-        /* background: url(../images/cookie.png) no-repeat;
+        /* background: url(/images/cookie.png) no-repeat;
         background-size: cover;
         background-position: center; */
     }
@@ -72,7 +72,7 @@ homepc monitor : 1366*625
         right: 0;
         align-items: normal;
         padding: 3%; */
-        left: 0;
+        left: -5%;
     }
 
     .navmenu .membership>li {
@@ -95,19 +95,16 @@ homepc monitor : 1366*625
     .navmenu .headmenu {
         width: 100%;
         position: absolute;
-        top: 370%;
+        top: 400%;
         left: -100%;
         background: #f1c4a9;
-        height: 320%;
+        height: 350%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         transition: all 0.5s;
         border-bottom-right-radius: 50%;
         border-bottom-left-radius: 50%;
-        /* background: url(../images/cookie.png) no-repeat;
-        background-size: cover;
-        background-position: center; */
     }
 
     .navmenu .headmenu.on {
@@ -118,7 +115,7 @@ homepc monitor : 1366*625
         width: 50%;
         margin: 3% 0 9%;
     font-size: 35px;
-    height: 7%;
+    height: 9%;
     line-height: 1;
     }
 
@@ -149,21 +146,24 @@ homepc monitor : 1366*625
 
     .resize_pack {
         position: absolute;
-        top: 50%;
-        right: 10%;
-        transform: translateY(-50%);
+    top: 25%;
+    right: 5%;
     }
 
     .resize_pack span {
         width: auto;
     }
 
+.menu_icon {
+    display: block;
+}
+
     .membership .close {
         position: absolute;
         top: 0;
         right: 0;
         font-size: 25px !important;
-        line-height: 1.2;
+        line-height: 1;
         width: 9% !important;
         height: 10%;
         border-radius: 50%;
@@ -171,6 +171,7 @@ homepc monitor : 1366*625
         border: 1px solid #000;
         text-align: center;
         padding: 1%;
+        display: block;
     }
 
     /* .membership .hide_mem {

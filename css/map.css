@@ -24,7 +24,6 @@ html {
   width: 100%;
   height: 120px;
   background-color: #dfd0ac;
-  ;
   position: fixed;
   z-index: 1;
   margin: 0 auto;
@@ -52,28 +51,35 @@ html {
     text-align: center;
 }
 
-#nav .logo a {
-  width: 80%;
-}
-
 #nav .navmenu {
   width: 50%;
   height: 100%;
   margin-left: 60%;
-
 }
 
+.resize {
+  display: none;
+}
 
+.magnifyinggl {
+  position: absolute;
+  top: 15%;
+  right: 33%;
+  z-index: 999;
+  font-size: 20px;
+}
 
 .navmenu .searchbx {
-  display: none;
-  width: 18%;
-  height: 35%;
-  position: absolute;
-  top: 8%;
-  right: 32%;
-  transition: all 1s;
-
+  display: none; 
+    width: 18%;
+    height: 35%;
+    position: absolute;
+    top: 13%;
+    right: 31%;
+    transition: all 1s;
+}
+.navmenu .searchbx.on {
+  display: block;
 }
 
 .navmenu .searchbx input {
@@ -88,20 +94,22 @@ html {
   opacity: 1;
 } */
   #nav .navmenu .membership {
-  /* padding: 0 7%; */
-  text-align: right;
-  height: 40%;
-  display: flex;
-  transform: translateY(-10%);
-  /* margin-left: 52%; */
-  width: 100%;
+      /* padding: 0 7%; */
+      text-align: right;
+      height: 40%;
+      display: flex;
+      transform: translateY(-10%);
+      margin-left: 6%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
 }
 
 .navmenu>ul>li {
   font-size: 20px;
 }
 
-.navmenu .membership>li {
+.navmenu .hide_mem {
   width: 5%;
   font-size: 17px;
   margin: 0 5%;
@@ -148,10 +156,6 @@ html {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-family: 'Poppins', sans-serif;
-}
-
-.navmenu .headmenu>li:nth-child(4) {
-  transform: scale(1.2);
 }
 
 .navmenu .headmenu>li::after {
@@ -218,11 +222,15 @@ html {
   opacity: 1;
 }
 
+.close {
+  display: none;
+}
+
 
 /* section */
 /* article1 */
 #art1_map {
-  background: url(../images/subbg.jpg) no-repeat;
+  background: url(/images/subbg.jpg) no-repeat;
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
