@@ -235,7 +235,7 @@ html {
 /* section */
 /* article1 */
 #art1_map {
-  background: url(/images/subbg.jpg) no-repeat;
+  background: url(../images/subbg.jpg) no-repeat;
   background-size: 100% 100%;
   width: 100%;
   height: 100vh;
