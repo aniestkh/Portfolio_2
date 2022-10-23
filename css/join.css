@@ -132,6 +132,12 @@ select {
   position: relative;
 }
 
+.post span {
+  margin: 0 2%;
+    display: flex;
+    align-items: center;
+}
+
 .post input {
   width: 30%;
   text-align: center;
