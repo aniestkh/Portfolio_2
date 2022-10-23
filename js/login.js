@@ -4,12 +4,24 @@ $('select').on('focus', function () {
 })
 
 // input박스 선택시 색입힘 및 사이즈업
-$('input').on('focus', function () {
+$('#formlist .id input').on('focus', function () {
   $(this).css({ background: '#f5f5dc', transform: 'scale(1.2)' })
+  $('#formlist .id label').css({color:'#777777'})
 })
-$('input').on('blur', function () {
+$('#formlist .id input').on('blur', function () {
   $(this).css({ background: '#fff', transform: 'scale(1)' })
+  $('#formlist .id label').css({color:'#000'})
 })
+
+$('#formlist .passwd input').on('focus', function () {
+    $(this).css({ background: '#f5f5dc', transform: 'scale(1.2)' })
+    $('#formlist .passwd label').css({color:'#777777'})
+  })
+  $('#formlist .passwd input').on('blur', function () {
+    $(this).css({ background: '#fff', transform: 'scale(1)' })
+    $('#formlist .passwd label').css({color:'#000'})
+  })
+
 
 // 제출 전 오류 경고
 $('#formlist').on('submit', function () {
