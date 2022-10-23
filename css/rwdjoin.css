@@ -117,13 +117,13 @@
         margin: 2% 0;
     }
     .email input:nth-child(1) {width: 80%;}
-    .email input:nth-child(3) {width: 40%}
+    .email input:nth-child(3) {width: 50%}
 
     .email select {
         /* background-color: #f7e6f7; */
         text-align: center;
         padding: 1.5%;
-        width: 50%;
+        width: 45%;
         margin-left: 3%;
         font-size: 15px;
     }
