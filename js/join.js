@@ -115,9 +115,33 @@ $('#formlist').on('submit', function () {
     return false
   }
 
+
+  // 약관동의
+  $('.chbx .txtcheck').on('click', function(){
+    let chbx = $(this).checked()
   
-  
+    console.log(chbx)
+    
+    if(!chbx){
+      alert('약관에 동의해주세요')
+      $('#accordion .chbx .txtcheck').focus()
+      return false
+    }
 })
+})
+
+// $('.chbx .txtcheck').on('click', function(){
+//   let chbx = $(this).checked()
+
+//   console.log(chbx)
+  
+//   if(!chbx){
+//     alert('약관에 동의해주세요')
+//     $('#accordion .chbx .txtcheck').focus()
+//     return false
+//   }
+
+
   // else if ( !pwboxCheck.test(pwbox) ) {
   //     alert('비밀번호 규칙에 맞지 않습니다.')
   //     $('.joinBox #pwbox').focus().css({
