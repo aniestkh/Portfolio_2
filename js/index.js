@@ -75,7 +75,7 @@ $('.coffeetime').on('click', function(){
     // var phonht = $(window).height()
     // alert('넓이'+phonww+'높이'+phonht)
 
-    if($('html').hasClass('phone')){
+    if($(window).width()<=400){
 
         alert(`모바일 전용 쿠폰증정! 'coupon1234'`)
     }
