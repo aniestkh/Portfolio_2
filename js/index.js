@@ -75,7 +75,7 @@ $('.coffeetime').on('click', function(){
     // var phonht = $(window).height()
     // alert('넓이'+phonww+'높이'+phonht)
 
-    alert('쿠폰증정!"coupon1234"')
+    alert(`쿠폰증정! 'coupon1234'`)
 })
 
 $('.navmenu .headmenu>li').on('click', function(){
