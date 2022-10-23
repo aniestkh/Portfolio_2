@@ -10,14 +10,17 @@ $('.membership .magnifyinggl').on('click', function () {
 $('.navmenu .headmenu >li').on('mouseover', function () {
     var lino = $(this).index()
 
-    $(this).css({ background: '#ffebb1' })
+    if($(window).width()>400) {
+        $(this).css({ background: '#ffebb1' })
+    }
     // $('.headmenu').find('.submenu').eq(lino).slideDown().css({opacity:1})
 })
 $('.navmenu .headmenu >li').on('mouseleave', function () {
     var lino = $(this).index()
 
-    $(this).css({ background: '' })
-    // $('.headmenu').find('.submenu').eq(lino).slideUp().css({opacity:0})
+    if($(window).width()>400){
+        $(this).css({ background: '' })
+    }
 })
 
 $('.magnifyinggl').on('click', function () {
@@ -35,11 +38,6 @@ $('.magnifyinggl').on('click', function () {
         $('.navmenu .searchbx').removeClass('on')
     }
 })
-
-
-
-
-
 
 $('.sns_icon').on('click', function () {
     if (!$('.sns').hasClass('on')) {
