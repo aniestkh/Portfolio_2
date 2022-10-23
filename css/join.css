@@ -34,6 +34,10 @@ body {
   padding: 1.5% 0;
 }
 
+#section #formlist .address {
+  border-bottom: 1px solid #ddd;
+}
+
 #formlist label {
   width: 30%;
   font-size: 18px;
@@ -44,6 +48,8 @@ body {
 #formlist .rightside {
   width: 50%;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .rightside input {
@@ -134,8 +140,6 @@ select {
 
 .post span {
   margin: 0 2%;
-    display: flex;
-    align-items: center;
 }
 
 .post input {
@@ -158,6 +162,7 @@ select {
   display: block !important;
   width: 80% !important;
   margin: 3% auto !important;
+  border-top: none !important;
 }
 
 #accordion .ui-icon {
