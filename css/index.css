@@ -1,13 +1,18 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 /* 
   font-family: 'Poppins', sans-serif;
+  font-family: 'Kanit', sans-serif;
 */
 
 /* 
+normal : 1920*1080
 homepc monitor : 1366*625
+mobile monitor : 400(370)*675
+(mine : 384*672)
 */
 
 body,
@@ -25,6 +30,7 @@ html {
   z-index: 1;
   margin: 0 auto;
   border-bottom: 1px solid #999;
+
 }
 
 #header #nav {
@@ -112,6 +118,8 @@ html {
   margin: 0 5%;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
+
 
 }
 
@@ -153,6 +161,7 @@ html {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-family: 'Poppins', sans-serif;
+
 }
 
 .navmenu .headmenu>li::after {

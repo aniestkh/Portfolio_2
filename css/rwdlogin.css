@@ -39,7 +39,7 @@ body {
 
     #section #formlist .inputbox {
         border: 1px solid #f5dec9;
-        background: #f5dec9;
+        background-color: #f5dec9;
     }
 
     #section #formlist .inputbox>div {
@@ -48,8 +48,12 @@ body {
 
     }
 
+    #formlist .webicon {
+        display: inline;
+      }
+
     #formlist label {
-        width: 40%;
+        width: 50%;
         font-size: 18px;
         padding: 0 4%;
         line-height: 2;

@@ -41,6 +41,11 @@ body {
     border-radius: 10px;
 }
 
+#formlist .webicon {
+  font-size: 20px;
+  display: none;
+}
+
 #section #formlist .inputbox {
   display: flex;
   flex-direction: column;
@@ -119,7 +124,7 @@ body {
 .subbtn {
   width: 80%;
   display: flex;
-  margin: 1% auto 0;
+  margin: 2% auto 0;
   justify-content: center;
   align-items: center;
 

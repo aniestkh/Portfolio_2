@@ -129,7 +129,7 @@ homepc monitor : 1366*625
     }
 
     .navmenu .headmenu>li:hover::after {
-        opacity: 0;
+        display: none;
     }
 
     .headmenu>li.on {
