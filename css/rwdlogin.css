@@ -39,6 +39,7 @@ body {
 
     #section #formlist .inputbox {
         border: 1px solid #f5dec9;
+        background: #f5dec9;
     }
 
     #section #formlist .inputbox>div {
