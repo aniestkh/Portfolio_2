@@ -58,7 +58,7 @@ homepc monitor : 1366*625
         transition: all 0.5s;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
-        /* background: url(/images/cookie.png) no-repeat;
+        /* background: url(../images/cookie.png) no-repeat;
         background-size: cover;
         background-position: center; */
     }
