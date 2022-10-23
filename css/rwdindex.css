@@ -23,18 +23,25 @@ homepc monitor : 1366*625
     position: relative;
   }
 
-#nav .logo {
-  display: flex;
-    width: 35%;
+  #nav .logo {
+    display: flex;
+    width: 15%;
     z-index: 9;
     justify-content: center;
     align-items: center;
-}
+  }
 
   #nav .logo a {
     width: 100%;
   }
 
+  .part1 .title1 {
+    top: 20%;
+  }
+
+  .part1 .title2 {
+    bottom: 5%;
+  }
   .resize_pack {
     position: absolute;
     top: 50%;
@@ -229,12 +236,12 @@ homepc monitor : 1366*625
   }
 
   #nav .navmenu .membership {
-    background: url(../images/postit.jpg) no-repeat;
+    background: url(/images/postit.jpg) no-repeat;
     background-size: 360% 220%;
     background-position: 37% 103%;
     border: none;
   }
-  
+
   #nav .navmenu .membership.on {
     width: 30%;
     flex-direction: column;

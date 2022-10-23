@@ -11,7 +11,7 @@ $('select').on('focus', function () {
 
 // input박스 선택시 색입힘 및 사이즈업
 $('input').on('focus', function () {
-  $(this).css({ background: '#f5f5dc', transform: 'scale(1.1)' })
+  $(this).css({ background: '#f5f5dc', transform: 'scale(1.2)' })
 })
 $('input').on('blur', function () {
   $(this).css({ background: 'initial', transform: 'scale(1)' })
