@@ -8,7 +8,7 @@ $('input').on('focus', function () {
   $(this).css({ background: '#f5f5dc', transform: 'scale(1.2)' })
 })
 $('input').on('blur', function () {
-  $(this).css({ background: 'initial', transform: 'scale(1)' })
+  $(this).css({ background: '#fff', transform: 'scale(1)' })
 })
 
 // 제출 전 오류 경고
