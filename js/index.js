@@ -78,6 +78,7 @@ $('.coffeetime').on('click', function(){
     if($(window).width()<=400){
 
         alert(`모바일 전용 쿠폰증정! 'coupon1234'`)
+        $(this).draggable()
     }
 })
 
@@ -126,3 +127,4 @@ $('.logo').on('click', function(){
     alert('넓이'+phonww+'높이'+phonht)
 
 })
+
