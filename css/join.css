@@ -264,7 +264,3 @@ select {
   padding: 3%;
   border: 1px solid;
 }
-
-#idbox, #name, #passbox, #pwcheck {
-  width: 70%;
-}
