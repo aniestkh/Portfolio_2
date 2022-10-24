@@ -117,45 +117,17 @@ $('#formlist').on('submit', function () {
 
 
   // 약관동의
-  $('.chbx .txtcheck').on('click', function(){
-    let chbx = $(this).checked()
+    let chbx1 = $('.chbx .checked1').prop('checked')
+    let chbx2 = $('.chbx .checked2').prop('checked')
+    let chbx3 = $('.chbx .checked3').prop('checked')
   
-    console.log(chbx)
+    console.log(chbx1, chbx2, chbx3)
     
-    if(!chbx){
+    if(!(chbx1 === true && chbx2 === true && chbx3 === true)){
       alert('약관에 동의해주세요')
-      $('#accordion .chbx .txtcheck').focus()
+      $('.chbx .txtcheck').focus()
       return false
     }
+
+    $(window).reload()
 })
-})
-
-// $('.chbx .txtcheck').on('click', function(){
-//   let chbx = $(this).checked()
-
-//   console.log(chbx)
-  
-//   if(!chbx){
-//     alert('약관에 동의해주세요')
-//     $('#accordion .chbx .txtcheck').focus()
-//     return false
-//   }
-
-
-  // else if ( !pwboxCheck.test(pwbox) ) {
-  //     alert('비밀번호 규칙에 맞지 않습니다.')
-  //     $('.joinBox #pwbox').focus().css({
-  //         borderColor:'#f00'
-  //     }).val('')
-  //     return false
-  // }
-
-  // let pwboxok = $('.joinBox #pwboxok').val()
-  // if (pwbox!==pwboxok) {
-  //     alert('비밀번호를 정확히 입력하세요.')
-  //     $('.joinBox #pwbox').focus().css({
-  //         borderColor:'#f00'
-  //     }).val('')
-  //     $('.joinBox #pwboxok').val('')
-  //     return false
-  // }
