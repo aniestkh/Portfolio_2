@@ -186,8 +186,9 @@ myphone monitor : 384*672
 
   .coffeetime {
     display: block;
-    /* transition: all 0.5s; */
     animation: coffeemoving 2s linear forwards;
+    top: 37%;
+    height: 41%;
   }
 
   @keyframes coffeemoving {
