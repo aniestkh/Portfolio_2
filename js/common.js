@@ -7,22 +7,6 @@ $('.membership .magnifyinggl').on('click', function () {
     $('.navmenu .searchbx').toggle()
 })
 
-$('.navmenu .headmenu >li').on('mouseover', function () {
-    var lino = $(this).index()
-
-    if(!$('html').hasClass('phone')) {
-        $(this).css({ background: '#ffebb1' })
-    }
-    // $('.headmenu').find('.submenu').eq(lino).slideDown().css({opacity:1})
-})
-$('.navmenu .headmenu >li').on('mouseleave', function () {
-    var lino = $(this).index()
-
-    if($(window).width()>400){
-        $(this).css({ background: '' })
-    }
-})
-
 $('.magnifyinggl').on('click', function () {
     // if($('html').hasClass('pc')) {
     //     $('.searchbx').addClass('on')

@@ -53,6 +53,7 @@ html {
     width: 15%;
     height: 70%;
     text-align: center;
+    z-index: 9;
 }
 
 #nav .navmenu {

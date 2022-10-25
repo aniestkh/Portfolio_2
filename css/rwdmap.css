@@ -251,7 +251,7 @@ homepc monitor : 1366*625
     .navmenu .membership>li {
         width: 30%;
         font-size: 25px;
-        margin: 3% 5% 5%;
+        margin: 4% 5% 5%;
     }
 
     .membership .sns {

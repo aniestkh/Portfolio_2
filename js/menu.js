@@ -97,3 +97,9 @@ $('.close').on('click', function(){
   $('.membership').removeClass('on')
   $('.headmenu').removeClass('on')
 })
+
+if($(window).width()<=400){
+  $('.menulist .xmark').on('click', function(){
+    $('.menulist .menu').removeClass('on')
+  })
+}
