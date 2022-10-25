@@ -85,11 +85,13 @@ $('.menu_icon').on('click', function () {
     if (!$('.navmenu .hide_mem').hasClass('on')) {
         memon()
         $('.navmenu .hide_mem').addClass('on')
+        $('.headmenu').addClass('on')
         $('.sns').removeClass('on')
         $('.navmenu .searchbx').removeClass('on')
     } else {
         memoff()
         $('.navmenu .hide_mem').removeClass('on')
+        $('.headmenu').removeClass('on')
     }
     
 })
