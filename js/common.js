@@ -10,7 +10,7 @@ $('.membership .magnifyinggl').on('click', function () {
 $('.navmenu .headmenu >li').on('mouseover', function () {
     var lino = $(this).index()
 
-    if($(window).width()>400) {
+    if(!$('html').hasClass('phone')) {
         $(this).css({ background: '#ffebb1' })
     }
     // $('.headmenu').find('.submenu').eq(lino).slideDown().css({opacity:1})
@@ -71,4 +71,26 @@ $(window).on('resize', function () {
     monitorsize()
 })
 
+
+
+function memon(){
+    $('.membership, .membership .close').addClass('on')
+}
+function memoff(){
+    $('.membership, .membership .close').removeClass('on')
+}
+
+
+$('.menu_icon').on('click', function () {
+    if (!$('.navmenu .hide_mem').hasClass('on')) {
+        memon()
+        $('.navmenu .hide_mem').addClass('on')
+        $('.sns').removeClass('on')
+        $('.navmenu .searchbx').removeClass('on')
+    } else {
+        memoff()
+        $('.navmenu .hide_mem').removeClass('on')
+    }
+    
+})
 

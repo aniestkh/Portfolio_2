@@ -243,21 +243,25 @@ myphone monitor : 384*672
   }
 
   #nav .navmenu .membership {
-    background: url(../images/postit.jpg) no-repeat;
     background-size: 360% 220%;
     background-position: 37% 103%;
     border: none;
+    top: 110%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 0.5s;
+    display: block;
   }
 
   #nav .navmenu .membership.on {
-    width: 30%;
-    flex-direction: column;
-    line-height: 2;
-    height: 155px;
-    top: 105%;
-    right: 0;
-    align-items: normal;
-    padding: 3%;
+    width: 95%;
+    height: 200px;
+    right: 3%;
   }
 
   .navmenu .headmenu {
@@ -348,10 +352,10 @@ myphone monitor : 384*672
   .membership .close {
     position: absolute;
     top: -5%;
-    right: 89%;
+    right: 0;
     font-size: 20px;
-    line-height: 1;
-    width: 20%;
+    line-height: 1.2;
+    width: 8%;
     height: 14%;
     border-radius: 50%;
     background: #ddd;

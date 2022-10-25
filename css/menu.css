@@ -30,26 +30,10 @@ img {
   height: 120px;
   background-color: #dfd0ac;
   position: fixed;
-  z-index: 9;
+  z-index: 1;
   margin: 0 auto;
   border-bottom: 1px solid #999;
-}
 
-#header.hide {
-  transform: translateY(-100%);
-}
-
-#header .hiding {
-  position: absolute;
-    top: -300%;
-    left: 0;
-    right: 0;
-    height: 100px;
-    background-color: #dfd0ac;
-}
-
-.hiding.on {
-  transform:translateY(400%);
 }
 
 #header #nav {
@@ -137,6 +121,8 @@ img {
   margin: 0 5%;
   cursor: pointer;
   font-family: 'Poppins', sans-serif;
+  /* font-family: 'Kanit', sans-serif; */
+
 
 }
 
@@ -178,6 +164,7 @@ img {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-family: 'Poppins', sans-serif;
+
 }
 
 .navmenu .headmenu>li::after {
@@ -290,15 +277,17 @@ img {
 }
 
 .postit .innerpost {
-  background: url(../images/postit.png) no-repeat;
+  background: url(http://localhost:52330/css/../images/postit.png) no-repeat;
   background-position: 0 0;
   background-size: 100% 100%;
   width: 100%;
-  height: 11%;
   margin-top: 10%;
   text-align: center;
   padding-left: 45%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .innerpost.on {
@@ -306,16 +295,11 @@ img {
 }
 
 .innerpost span {
-  font-size: 30px;
+  font-size: 25px;
     line-height: 2.5;
-    font-family: 'Gamja Flower', cursive;
+    /* font-family: 'Gamja Flower', cursive; */
     font-weight: bold;
 }
-
-/* .innerpost span.on {
-  font-size: 20px;
-  line-height: 3;
-} */
 
 .innerpost.click {
   transform: translateX(30%);
@@ -335,19 +319,23 @@ img {
 
 .menulist .xmark {
   position: absolute;
-    top: 0%;
+    top: 1%;
     left: 87%;
-    width: 14%;
-    height: 5%;
-    font-size: 30px;
+    width: 12%;
+    height: 6%;
+    line-height: 1.3;
+    background: #ddd;
+    font-size: 40px;
     text-align: center;
     cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 50%;
 }
 
 .menu >ul {
   width: 100%;
   height: 100%;
-  padding: 5%;
+  padding: 10% 5%;
 } 
 
 
