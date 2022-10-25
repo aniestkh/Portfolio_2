@@ -1,9 +1,11 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 /* 
   font-family: 'Poppins', sans-serif;
+  font-family: 'Indie Flower', cursive;
 */
 
 /* 
@@ -243,8 +245,8 @@ myphone monitor : 384*672
   }
 
   #nav .navmenu .membership {
-    background-size: 360% 220%;
-    background-position: 37% 103%;
+    background: url(../images/board.png) no-repeat;
+    background-size: 100% 100%;
     border: none;
     top: 110%;
     right: 0;
@@ -391,7 +393,9 @@ myphone monitor : 384*672
   }
 
   .navmenu .hide_mem {
-    font-size: 20px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
   }
 
 }
