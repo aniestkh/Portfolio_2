@@ -25,15 +25,13 @@ function drinkoff() {
   $('.drink').removeClass('on')
   // $('.recieptbx').removeClass('on')
 }
-$('.menu .list').on('click', function () {
+
+$('.menu .list >li').on('click', function () {
   var menuno = $(this).index()
   console.log(menuno)
-  // $(this).css({ transform: 'scale(1.5)' })
-  
+
   $('.menulist .menu').removeClass('on')
-  $('.drink').addClass('on')
-  // drinkon()
-  
+  drinkon()
 })
 
 $('.innerpost').on('click', function () {
@@ -89,13 +87,13 @@ function usedata(cname) {
 }
 
 
-$('.close').on('click', function(){
+$('.close').on('click', function () {
   $('.membership').removeClass('on')
   $('.headmenu').removeClass('on')
 })
 
-if($(window).width()<=400){
-  $('.menulist .xmark').on('click', function(){
+if ($(window).width() <= 400) {
+  $('.menulist .xmark').on('click', function () {
     $('.menulist .menu').removeClass('on')
   })
 }
