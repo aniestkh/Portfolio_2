@@ -244,6 +244,10 @@ myphone monitor : 384*672
     margin-left: 0;
   }
 
+  .submenu >li {
+    display: none;
+  }
+
   #nav .navmenu .membership {
     background: url(../images/board.png) no-repeat;
     background-size: 100% 100%;
@@ -398,4 +402,66 @@ myphone monitor : 384*672
     font-family: 'Indie Flower', cursive;
   }
 
+  /* footer */
+  #footer {
+    width: 100%;
+    height: 400px;
+    background-color: #f1f1e2;
+    position: relative;
+    display: none;
+  }
+  
+  #footer #footerbox .logo {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    left: 35%;
+    width: 40%;
+  }
+  
+  #footer #footerbox .sns{
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    right: 25%;
+  }
+  
+  .sns ul {
+    display: flex;
+      justify-content: space-between;
+  }
+  
+  .sns ul li {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 10%;
+    text-shadow: 5px 3px 2px #fff;
+  }
+  
+  #footer #footerbox .policy {
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    /* background: red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .policy >div {
+    font-size: 20px;
+    margin: 0 5%;
+    font-weight: bold;
+  }
+  
+  #footer #footerbox .txtpolicy {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    right: 0;
+    /* background: red; */
+    font-size: 15px;
+    width: 100%;
+    padding: 5%;
+  }
 }
