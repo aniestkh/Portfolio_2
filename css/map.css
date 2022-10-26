@@ -50,10 +50,12 @@ html {
     top: 50%;
     transform: translateY(-50%);
     left: 5%;
-    width: 15%;
+    width: 10%;
     height: 70%;
     text-align: center;
     z-index: 9;
+    display: flex;
+    align-items: center;
 }
 
 #nav .navmenu {

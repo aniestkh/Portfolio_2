@@ -1,11 +1,4 @@
-function drinkon() {
-  $('.drinking').addClass('on')
-  $('.recieptbx').addClass('on')
-}
-function drinkoff() {
-  $('.drinking').removeClass('on')
-  $('.recieptbx').removeClass('on')
-}
+
 $('article').on('click', '.menu .xmark', function () {
   $('.postit').removeClass('on')
   $('.innerpost, .innerpost span').removeClass('on')
@@ -24,20 +17,23 @@ $('#header .hiding').on('mouseover', function () {
   $(this).removeClass('on')
 })
 
-$('.menu >ul').on('mouseover', function () {
-  $(this).find('.menubx').addClass('slide')
-})
-$('.menu >ul').on('mouseleave', function () {
-  $(this).find('.menubx').removeClass('slide')
-})
-
-$('.menu .list >li').on('click', function () {
+function drinkon() {
+  $('.drink').addClass('on')
+  // $('.recieptbx').addClass('on')
+}
+function drinkoff() {
+  $('.drink').removeClass('on')
+  // $('.recieptbx').removeClass('on')
+}
+$('.menu .list').on('click', function () {
   var menuno = $(this).index()
   console.log(menuno)
-  $(this).css({ transform: 'scale(1.5)' })
-
-  drinkon()
-
+  // $(this).css({ transform: 'scale(1.5)' })
+  
+  $('.menulist .menu').removeClass('on')
+  $('.drink').addClass('on')
+  // drinkon()
+  
 })
 
 $('.innerpost').on('click', function () {

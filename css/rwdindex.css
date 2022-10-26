@@ -357,8 +357,8 @@ myphone monitor : 384*672
     right: 0;
     font-size: 20px;
     line-height: 1.2;
-    width: 8%;
-    height: 14%;
+    width: 7%;
+    height: 13%;
     border-radius: 50%;
     background: #ddd;
     border: 1px solid #000;
@@ -387,7 +387,7 @@ myphone monitor : 384*672
 
   .coffeetime {
     top: 22%;
-    height: 14%;
+    height: 20%;
     background-position: 15% !important;
     animation: coffeemoving 4s linear infinite;
   }
