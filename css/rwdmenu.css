@@ -162,7 +162,7 @@ homepc monitor : 1366*625
 
   .membership .close {
     position: absolute;
-    top: -11%;
+    top: 0%;
     right: 2%;
   }
 
@@ -190,6 +190,7 @@ homepc monitor : 1366*625
     margin: 5% 0;
     line-height: 2.5;
     font-weight: normal;
+    font-family: 'Single Day', cursive;
   }
 
 }
@@ -307,6 +308,9 @@ homepc monitor : 1366*625
     line-height: 1;
   }
 
+  /* .navmenu .headmenu>li { */
+
+
   .navmenu .headmenu>li:hover .submenu {
     display: none;
   }
@@ -412,6 +416,12 @@ homepc monitor : 1366*625
     width: 33%;
     margin: 10% auto;
     height: 30%;
+    font-size: 17px;
+  }
+
+  .headmenu >li:nth-child(2) {
+    font-weight: normal;
+    transform: scale(1);
   }
 
   .drink.on {
