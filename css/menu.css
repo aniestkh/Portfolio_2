@@ -370,13 +370,13 @@ img {
 
 .menu .list >li {
   text-align: center;
-  font-size: 15px;
-  width: 31%;
-  height: 12%; 
-  display: inline-flex;
-  margin: 8% 1%;
-  justify-content: center;
-  align-items: center;
+    font-size: 20px;
+    width: 31%;
+    height: 15%;
+    display: inline-flex;
+    margin: 8% 1% 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu .list >li a {
