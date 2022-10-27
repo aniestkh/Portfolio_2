@@ -430,23 +430,23 @@ homepc monitor : 1366*625
     transform: scale(1);
   }
 
-  .drink.on {
-    top: 54%;
-    left: 40%;
-  }
-
+  
   .drink {
     top: 114%;
     left: 70%;
-  }
-
-  .drink {
     height: 30%;
+    width: 100%;
+  }
+  
+  .drink.on {
+    top: 54%;
+    left: 25%;
   }
 
   .drink .xmark2 {
-    top: -35%;
-    right: -26%;
+    top: -5%;
+    right: 54%;
+    font-size: 30px;
   }
 
 }
