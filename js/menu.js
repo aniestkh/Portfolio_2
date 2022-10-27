@@ -7,10 +7,12 @@ $('article').on('click', '.menu .xmark', function () {
   $('.menu .menubx').removeClass('on')
 })
 
-$('article').on('click', function () {
-  $('#header').addClass('hide')
-  $('#header .hiding').addClass('on')
-})
+if($(window).width()>400){
+  $('article').on('click', function () {
+    $('#header').addClass('hide')
+    $('#header .hiding').addClass('on')
+  })
+}
 
 $('#header .hiding').on('mouseover', function () {
   $('#header').removeClass('hide')
@@ -19,20 +21,10 @@ $('#header .hiding').on('mouseover', function () {
 
 function drinkon() {
   $('.drink').addClass('on')
-  // $('.recieptbx').addClass('on')
 }
 function drinkoff() {
   $('.drink').removeClass('on')
-  // $('.recieptbx').removeClass('on')
 }
-
-$('.menu .list >li').on('click', function () {
-  var menuno = $(this).index()
-  console.log(menuno)
-
-  $('.menulist .menu').removeClass('on')
-  drinkon()
-})
 
 $('.innerpost').on('click', function () {
   var lino = $(this).index()
@@ -62,12 +54,13 @@ $.ajax({
   success: function (getdata) {
     console.log(getdata)
     data = getdata
-    // usedata('coffeelist') //클릭이벤트 발생시 usedata 호출
+    usedata('coffeelist') //클릭이벤트 발생시 usedata 호출
   },
   error: function (xhp) {
     alert(xhp.status + ' 에러발생')
   }
 })
+
 
 function usedata(cname) {
   $('.list').remove()
@@ -84,8 +77,23 @@ function usedata(cname) {
   })
   newCont += `</ul>`
   $('.menu').append(newCont)
-}
 
+  
+  // 음료 선택시 테이블 위 음료 노출
+  $('body').on('click', '.list >li',function(){
+    var lino = $(this).index()
+    var changedrink = `<div class="drinklist">`
+    console.log(lino)
+      drinkon()
+    $(data).find('#' + cname).find('drink').each(function () {
+      let pic = $(this).find('photo').text()
+      changedrink += `<img src="${pic}" alt="">`
+    })
+    changedrink += `</div>`
+    $('.drink').append(changedrink)
+    
+})
+}
 
 $('.close').on('click', function () {
   $('.membership').removeClass('on')
@@ -97,3 +105,11 @@ if ($(window).width() <= 400) {
     $('.menulist .menu').removeClass('on')
   })
 }
+
+// 테이블 위 음료 제거
+$('.xmark2').on('click', function(){
+  drinkoff()
+  $('.menu').addClass('on')
+  $('.postit').addClass('on')
+
+})

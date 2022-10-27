@@ -438,6 +438,7 @@ img {
     left: 65%;
     /* background-color: red; */
     transition: all .5s;
+    overflow: hidden;
 }
 
 .drink.on {
@@ -457,8 +458,8 @@ img {
 
 .drink .xmark2 {
   position: absolute;
-    top: -15%;
-    right: 35%;
+  top: 5%;
+  right: 20%;
     width: auto;
     height: auto;
     font-size: 60px;

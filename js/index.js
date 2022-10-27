@@ -1,3 +1,4 @@
+// 메뉴 리스트 등장
 $(window).on('resize', function(){
     var ww = $(window).width()
     
@@ -6,7 +7,6 @@ $(window).on('resize', function(){
     }
     
 })
-
 $(window).on('load', function(){
     var ww = $(window).width()
     if( ww <= 400) {
@@ -14,20 +14,16 @@ $(window).on('load', function(){
     }
 })
 
-
+// 플로팅 이모티콘
 $('.coffeetime').on('click', function(){
-    // var phonww = $(window).width()
-    // var phonht = $(window).height()
-    // alert('넓이'+phonww+'높이'+phonht)
-
     if($(window).width()<=400){
 
         alert(`모바일 전용 쿠폰증정! 'coupon1234'`)
     }
 })
 
+// 메뉴 선택시 위로 튀어오름
 $('.navmenu .headmenu>li').on('click', function(){
-
     if(!$(this).hasClass('pnt')){
         $(this).addClass('pnt').siblings().removeClass('pnt')
     } else {
@@ -36,28 +32,34 @@ $('.navmenu .headmenu>li').on('click', function(){
 
 })
 
+// 고영희님은 사랑입니다
+$('.mapping').on('click',function(){
+    $('.godgoyang').css({display:'block'})
+})
+$('body, html').on('click', '.godgoyang', function(){
+    $(this).css({display:'none'})
+})
 
-// function memon(){
-//     $('.membership, .membership .close').addClass('on')
-// }
-// function memoff(){
-//     $('.membership, .membership .close').removeClass('on')
-// }
+// outer
+$(window).on('load', function(){
+    var count = 0;
 
 
-// $('.menu_icon').on('click', function () {
-//     if (!$('.navmenu .hide_mem').hasClass('on')) {
-//         memon()
-//         $('.navmenu .hide_mem').addClass('on')
-//         $('.sns').removeClass('on')
-//         $('.navmenu .searchbx').removeClass('on')
-//     } else {
-//         memoff()
-//         $('.navmenu .hide_mem').removeClass('on')
-//     }
-    
-// })
-
+        function add() {
+            count++
+            $('.outer .count').text(count+'%')
+            $('.outercv .liquid .coffee').css({height:count+'%'})
+            
+            if (count===100) {
+                clearInterval(timer)
+                $('.outercv').delay(300).hide(300)
+                $('html,body').scrollTop(0)
+                // $('#menu li').eq(0).addClass('on')
+                // .siblings().removeClass('on')
+            }
+        }
+    var timer = setInterval(add, 10)
+})
 
 $('.logo').on('click', function(){
     var phonww = $(window).width()
