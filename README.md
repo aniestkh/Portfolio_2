@@ -2,6 +2,7 @@ https://aniestkh.github.io/Portfolio_2/
 
 <pre>
 <h1><특징></h1>
+**읽는법: 제목 아래 반응형 단위로 특징 구분**
 <h2>index.html</h2>
 1. 오프닝: outer 기능 적용.(1920 한정)
 
