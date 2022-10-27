@@ -34,7 +34,7 @@ $('.navmenu .headmenu>li').on('click', function(){
 
 // 고영희님은 사랑입니다
 $('.mapping').on('click',function(){
-    $('.godgoyang').css({display:'block'})
+    $('.godgoyang').css({display:'block'}).delay(6000).hide(200)
 })
 $('body, html').on('click', '.godgoyang', function(){
     $(this).css({display:'none'})
