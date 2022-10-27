@@ -3,7 +3,7 @@ https://aniestkh.github.io/Portfolio_2/
 <pre>
 <h1><특징></h1>
 <h2>index.html</h2>
-1. 오프닝: outer 기능 적용.
+1. 오프닝: outer 기능 적용.(1920 한정)
 
 <b> - 공통 - </b>
 1. 헤더-로고: 디스플레이 넓이 높이 정보 (test용으로 적용)
