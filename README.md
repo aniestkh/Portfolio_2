@@ -20,6 +20,7 @@ https://aniestkh.github.io/Portfolio_2/
 2. 헤더) 
    bar 아이콘: 로그인, 회원가입
    -> 히든 이벤트: 고양이 그림과 커피잔 클릭시 각 gif 노출
+      (일정 시간 후 자동꺼짐. 혹은 화면 터치로 종료가능)
 
 <h2>menu.html</h2>
  <b>- 공통 -</b>
