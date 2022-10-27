@@ -193,6 +193,13 @@ homepc monitor : 1366*625
     font-family: 'Single Day', cursive;
   }
 
+  .drink {
+    width: 40%;
+  }
+
+  .drink.on {
+    left: 35%;
+  }
 }
 
 @media screen and (max-width:400px) {

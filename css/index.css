@@ -316,6 +316,11 @@ html {
     border: 8px solid #000;
 }
 
+.godgoyang, .goyangisgod {
+  display: none;
+}
+
+
 /* footer */
 #footer {
   width: 100%;

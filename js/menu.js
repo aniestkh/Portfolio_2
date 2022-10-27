@@ -113,9 +113,12 @@ if ($(window).width() <= 400) {
 }
 
 // 테이블 위 음료 제거
-$('.xmark2').on('click', function(){
-  drinkoff()
-  $('.menu').addClass('on')
-  $('.postit').addClass('on')
-
+// $('.xmark2').on('click', function(){
+//   drinkoff()
+//   $('.menu').addClass('on')
+//   $('.postit').addClass('on')
+// })
+$('body').on('click','.drink', function(){
+  $('.drink').removeClass('on')
 })
+
