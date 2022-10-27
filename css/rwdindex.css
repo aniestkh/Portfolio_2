@@ -412,8 +412,10 @@ myphone monitor : 384*672
   }
 
   .coffeetime {
+    width: 40%;
     top: 22%;
     height: 20%;
+    background-size: 100%
     background-position: 15% !important;
     animation: coffeemoving 4s linear infinite;
   }
