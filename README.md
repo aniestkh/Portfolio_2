@@ -1,7 +1,7 @@
 https://aniestkh.github.io/Portfolio_2/
 
 <pre>
-<특징>
+<h1><특징></h1>
 //index.html
 1. 오프닝: outer 기능 적용.
 
