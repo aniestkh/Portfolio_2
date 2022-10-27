@@ -36,9 +36,13 @@ $('.navmenu .headmenu>li').on('click', function(){
 $('.mapping').on('click',function(){
     $('.godgoyang').css({display:'block'}).delay(6000).hide(200)
 })
-$('body, html').on('click', '.godgoyang', function(){
+$('body, html').on('click', '.godgoyang, .goyangisgod', function(){
     $(this).css({display:'none'})
 })
+$('.mapping2').on('click',function(){
+    $('.goyangisgod').css({display:'block'}).delay(5500).hide(200)
+})
+
 
 // outer
 $(window).on('load', function(){
