@@ -34,12 +34,14 @@ $('.innerpost').on('click', function () {
   if ($('.postit').hasClass('on')) {
     $(this).addClass('click').siblings().removeClass('click')
     drinkoff()
+    $('.menulist .menu').addClass('on')
 
   } else {
     $('.postit').addClass('on')
     $('.innerpost, .innerpost span').addClass('on')
     $(this).addClass('click').siblings().removeClass('click')
     $('.menulist .menu').addClass('on')
+
   }
   usedata(idbox)
 
@@ -85,7 +87,9 @@ function usedata(cname) {
     var changedrink = `<div class="drinklist">`
     console.log(lino)
       drinkon()
-      $('.menu').removeClass('on')
+      if($(window).width()<=400){
+        $('.menu').removeClass('on')
+      }
     $(data).find('#' + cname).find('drink').each(function () {
       let pic = $(this).find('photo').text()
       changedrink += `<img src="${pic}" alt="">`
