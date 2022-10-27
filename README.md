@@ -24,6 +24,7 @@ https://aniestkh.github.io/Portfolio_2/
 <h2>menu.html</h2>
  <b>- 공통 -</b>
 1. 목록에 음료 선택시 테이블에 확대된 음료 노출
+2. 반응형 적용
 
  <b>- 1920, 1024 -</b>
 1. 화면 클릭시 헤더 숨김(상단 클릭시 헤더 노출)
@@ -35,6 +36,7 @@ https://aniestkh.github.io/Portfolio_2/
  <b>- 공통 -</b>
 1. 구글 지도 적용
 2. 연락처 및 문자 선택시 자동 연결 기능 적용
+3. 반응형 적용
 
  <b>- 400 -</b>
 1. 헤더-메뉴바: menu.html과 동일
@@ -43,6 +45,7 @@ https://aniestkh.github.io/Portfolio_2/
  <b>- 공통 -</b>
 1. input란 focus시 scale 적용 및 label 흐리게
 2. input 공란 상태로 로그인 클릭시 '아이디/비밀번호 입력' 경고창 팝업
+3. 반응형 적용
 
 <h2>join.html</h2>
  <b>- 공통 -</b>
@@ -50,5 +53,6 @@ https://aniestkh.github.io/Portfolio_2/
 2. 일부 항목 공란으로 폼 제출시 경고창 팝업
 3. input란 focus시 scale 적용
 4. select 선택시 active효과로써 색 변경
+5. 반응형 적용
 </pre>
 
