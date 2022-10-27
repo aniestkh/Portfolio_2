@@ -444,7 +444,7 @@ homepc monitor : 1366*625
   }
 
   .drink .xmark2 {
-    top: -5%;
+    top: 0%;
     right: 54%;
     font-size: 30px;
   }
