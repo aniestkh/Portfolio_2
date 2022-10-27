@@ -28,8 +28,8 @@ homepc monitor : 1366*625
     height: 90px;
   }
 
-  .hiding.on {
-    transform: translateY(280%);
+  #header .hiding.on {
+    top: 15%;
   }
 
   #nav .navmenu {
@@ -209,6 +209,10 @@ homepc monitor : 1366*625
     height: 90px;
   }
 
+  #header .hiding.on{
+    display: none;
+  }
+
   #nav .logo {
     display: flex;
     justify-content: center;
@@ -231,7 +235,8 @@ homepc monitor : 1366*625
   }
 
   #nav .navmenu .membership {
-    background: #f8e5ff;
+    /* background: #f8e5ff; */
+    background-image: linear-gradient(55deg, #f8e5ff, #ffebb1ab);
     position: absolute;
     top: 10%;
     left: 100%;
@@ -281,7 +286,8 @@ homepc monitor : 1366*625
     position: absolute;
     top: 575%;
     left: -100%;
-    background: #f1c4a9;
+     /* background: #f1c4a9; */
+     background-image: linear-gradient(45deg, #f1c4a9, #f8e5ff);
     height: 350%;
     display: flex;
     flex-direction: column;
@@ -407,7 +413,7 @@ homepc monitor : 1366*625
   .menulist .xmark {
     left: 91%;
     width: 8%;
-    height: 6.5%;
+    height: 6%;
     line-height: 1.1;
     font-size: 25px;
   }

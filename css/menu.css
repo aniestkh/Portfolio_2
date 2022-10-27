@@ -35,7 +35,25 @@ img {
   z-index: 1;
   margin: 0 auto;
   border-bottom: 1px solid #999;
+}
 
+#header.hide {
+  transform: translateY(-100%);
+}
+
+#header .hiding {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  background: #dfd0ac;
+  height: 100px;
+  transition: all 0s;
+}
+
+#header .hiding.on {
+  top: 55%;
+  transition: all 0.5s;
 }
 
 #header #nav {
@@ -304,7 +322,7 @@ img {
 }
 
 .innerpost.click {
-  transform: translateX(30%);
+  transform: translateX(15%);
 }
 
 .menulist .menu {
