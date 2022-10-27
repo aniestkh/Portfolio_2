@@ -1,5 +1,6 @@
 https://aniestkh.github.io/Portfolio_2/
 
+<pre>
 <특징>
 //index.html
 1. 오프닝: outer 기능 적용.
@@ -42,5 +43,5 @@ https://aniestkh.github.io/Portfolio_2/
 2. 일부 항목 공란으로 폼 제출시 경고창 팝업
 3. input란 focus시 scale 적용
 4. select 선택시 active효과로써 색 변경
-
+</pre>
 
