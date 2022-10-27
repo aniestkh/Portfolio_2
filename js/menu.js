@@ -56,7 +56,7 @@ $.ajax({
   success: function (getdata) {
     console.log(getdata)
     data = getdata
-    usedata('coffeelist') //클릭이벤트 발생시 usedata 호출
+    // usedata('coffeelist') //클릭이벤트 발생시 usedata 호출
   },
   error: function (xhp) {
     alert(xhp.status + ' 에러발생')
@@ -85,17 +85,18 @@ function usedata(cname) {
   $('body').on('click', '.list >li',function(){
     var lino = $(this).index()
     var changedrink = `<div class="drinklist">`
+    
     console.log(lino)
       drinkon()
       if($(window).width()<=400){
         $('.menu').removeClass('on')
       }
-    $(data).find('#' + cname).find('drink').each(function () {
-      let pic = $(this).find('photo').text()
+    var pic = $(data).find('#' + cname).find('drink').eq(lino).find('photo').text()
+    // each(function () {
       changedrink += `<img src="${pic}" alt="">`
-    })
+    // })
     changedrink += `</div>`
-    $('.drink').append(changedrink)
+    $('.drink').html(changedrink)
     
 })
 }
