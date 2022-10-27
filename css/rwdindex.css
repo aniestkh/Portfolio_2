@@ -191,7 +191,7 @@ myphone monitor : 384*672
   .outercv {
     display: none;
   }
-  
+
   .coffeetime {
     display: block;
     animation: coffeemoving 2s linear forwards;
@@ -282,6 +282,14 @@ myphone monitor : 384*672
   right: 5%;
   width: 30%;
   bottom: 70%;
+}
+
+.mapping2 {
+  position: absolute;
+    top: 69%;
+    left: 5%;
+    width: 20%;
+    bottom: 8%;
 }
 
   .navmenu .headmenu {
@@ -416,7 +424,7 @@ myphone monitor : 384*672
     font-family: 'Indie Flower', cursive;
   }
 
-  .godgoyang {
+  .godgoyang, .goyangisgod {
     position: absolute;
     top: 24%;
     left: 0;
