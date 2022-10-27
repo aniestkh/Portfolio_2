@@ -85,6 +85,7 @@ function usedata(cname) {
     var changedrink = `<div class="drinklist">`
     console.log(lino)
       drinkon()
+      $('.menu').removeClass('on')
     $(data).find('#' + cname).find('drink').each(function () {
       let pic = $(this).find('photo').text()
       changedrink += `<img src="${pic}" alt="">`
