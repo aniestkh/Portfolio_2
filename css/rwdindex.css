@@ -18,7 +18,7 @@ myphone monitor : 384*672
     height: 90px;
   }
 
- 
+
 
   #nav .navmenu {
     width: 100%;
@@ -228,6 +228,78 @@ myphone monitor : 384*672
 }
 
 @media screen and (max-width:400px) {
+  .outercv {
+    display: block;
+  }
+
+  .outercv .outer .outerlist {
+    /* transform: scale(1); */
+    top: 100%;
+    /* transform: translateY(-50%); */
+    left: 50%;
+  }
+
+  .outer ul .outeritems1.on {
+    top: -8%;
+    left: 10%;
+  }
+
+  .outer ul .outeritems2.on {
+    top: 74%;
+    left: 10%;
+  }
+
+  .outer ul .outeritems3.on {
+    top: -8%;
+    left: 40%;
+  }
+
+  .outer ul .outeritems4.on {
+    top: 4%;
+    left: 17%;
+  }
+
+  .outer ul .outeritems5.on {
+    top: 55%;
+    left: 8%;
+  }
+
+  .outer ul .outeritems6.on {
+    top: 66%;
+    left: 48%;
+  }
+
+  .outer ul .outeritems7.on {
+    top: 79%;
+    left: 70%;
+  }
+
+  .outer ul .outeritems8.on {
+    top: 50%;
+    left: 43%;
+  }
+
+  .outer ul .outeritems9.on {
+    top: 43%;
+    left: 83%;
+  }
+
+  .outer ul .outeritems10.on {
+    top: 33%;
+    left: 4%;
+  }
+
+  .outer ul .outeritems11.on {
+    top: 45%;
+    left: 61%;
+  }
+
+  .outer ul .outeritems12.on {
+    top: 13%;
+    left: 7%;
+    transform: scale(1);
+  }
+
   #nav .logo {
     width: 35%;
     z-index: 9;
@@ -250,7 +322,7 @@ myphone monitor : 384*672
     margin-left: 0;
   }
 
-  .submenu >li {
+  .submenu>li {
     display: none;
   }
 
@@ -276,21 +348,21 @@ myphone monitor : 384*672
     right: 3%;
   }
 
-.mapping {
-  position: absolute;
-  top: 9%;
-  right: 5%;
-  width: 30%;
-  bottom: 70%;
-}
+  .mapping {
+    position: absolute;
+    top: 9%;
+    right: 5%;
+    width: 30%;
+    bottom: 70%;
+  }
 
-.mapping2 {
-  position: absolute;
+  .mapping2 {
+    position: absolute;
     top: 69%;
     left: 5%;
     width: 20%;
     bottom: 8%;
-}
+  }
 
   .navmenu .headmenu {
     height: 71vh;
@@ -427,7 +499,8 @@ myphone monitor : 384*672
     font-family: 'Indie Flower', cursive;
   }
 
-  .godgoyang, .goyangisgod {
+  .godgoyang,
+  .goyangisgod {
     position: absolute;
     top: 24%;
     left: 0;
@@ -442,9 +515,9 @@ myphone monitor : 384*672
   .outer .counter {
     position: absolute;
     top: 17%;
-    left: 36%;
-    width: 25%;
-    height: 15%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
     font-size: 30px;
     opacity: 0.8;
   }
@@ -457,7 +530,7 @@ myphone monitor : 384*672
     position: relative;
     display: none;
   }
-  
+
   #footer #footerbox .logo {
     position: absolute;
     top: 35%;
@@ -465,26 +538,26 @@ myphone monitor : 384*672
     left: 35%;
     width: 40%;
   }
-  
-  #footer #footerbox .sns{
+
+  #footer #footerbox .sns {
     width: 10%;
     position: absolute;
     top: 5%;
     right: 25%;
   }
-  
+
   .sns ul {
     display: flex;
-      justify-content: space-between;
+    justify-content: space-between;
   }
-  
+
   .sns ul li {
     font-size: 25px;
     font-weight: bold;
     margin: 0 10%;
     text-shadow: 5px 3px 2px #fff;
   }
-  
+
   #footer #footerbox .policy {
     position: absolute;
     top: 15%;
@@ -494,13 +567,13 @@ myphone monitor : 384*672
     display: flex;
     justify-content: center;
   }
-  
-  .policy >div {
+
+  .policy>div {
     font-size: 20px;
     margin: 0 5%;
     font-weight: bold;
   }
-  
+
   #footer #footerbox .txtpolicy {
     position: absolute;
     top: 60%;
