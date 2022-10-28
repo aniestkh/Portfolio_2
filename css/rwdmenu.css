@@ -441,13 +441,14 @@ homepc monitor : 1366*625
   .drink {
     top: 114%;
     left: 70%;
-    height: 30%;
+    text-align: center;
+    height: 50%;
     width: 100%;
   }
   
   .drink.on {
-    top: 54%;
-    left: 25%;
+    top: 44%;
+    left: 0%;
   }
 
   .drink .xmark2 {
