@@ -58,27 +58,27 @@
     <drink>
       <name>코코넛커피스무디</name>
       <price>5000원</price>
-      <photo></photo>
+      <photo>./images/코코넛커피스무디.png</photo>
     </drink>
     <drink>
       <name>딸기스무디</name>
       <price>4500원</price>
-      <photo></photo>
+      <photo>./images/딸기스무디.png</photo>
     </drink>
     <drink>
       <name>초코스무디</name>
       <price>4500원</price>
-      <photo></photo>
+      <photo>./images/초코스무디.png</photo>
     </drink>
     <drink>
-      <name>수박스무디</name>
+      <name>자두스무디</name>
       <price>4700원</price>
-      <photo></photo>
+      <photo>./images/자두스무디.png</photo>
     </drink>
     <drink>
-      <name>블루베리스무디</name>
+      <name>오렌지스무디</name>
       <price>5000원</price>
-      <photo></photo>
+      <photo>./images/오렌지스무디.png</photo>
     </drink>
   </part>
   <part id="food"><drink></drink></part>

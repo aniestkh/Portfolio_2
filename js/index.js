@@ -53,6 +53,7 @@ $(window).on('load', function(){
             count++
             $('.outer .count').text(count+'%')
             $('.outercv .liquid .coffee').css({height:count+'%'})
+            $('.outer .outerlist').addClass('on')
             
             if (count===100) {
                 clearInterval(timer)
@@ -62,7 +63,12 @@ $(window).on('load', function(){
                 // .siblings().removeClass('on')
             }
         }
-    var timer = setInterval(add, 10)
+    var timer = setInterval(add, 35)
+})
+
+$('body').on('click', '.membership',function(){
+    $('.membership').removeClass('on')
+    $('.hide_mem').removeClass('on')
 })
 
 $('.logo').on('click', function(){

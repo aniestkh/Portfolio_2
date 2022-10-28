@@ -179,9 +179,9 @@ myphone monitor : 384*672
     right: 2%;
   }
 
-  .membership .close.on {
+  /* .membership .close.on {
     display: block;
-  }
+  } */
 
   .part1 .title1,
   .part1 .title2 {
