@@ -234,10 +234,8 @@ html {
 
 /* article1 */
 #article1 {
-  /* background-color: rgb(185, 255, 185); */
   height: 100vh;
   position: relative;
-  /* transform: translateY(-120px); */
 }
 
 #article1 .part1 {
