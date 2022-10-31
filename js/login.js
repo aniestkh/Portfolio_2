@@ -5,7 +5,7 @@ $('select').on('focus', function () {
 
 // input박스 선택시 색입힘 및 사이즈업
 $('#formlist .id input').on('focus', function () {
-  $(this).css({ background: '#f5f5dc', transform: 'scale(1.2)' })
+  $(this).css({ background: '#f5f5dc', transform: 'scale(1.1)' })
   $('#formlist .id label').css({color:'#777777'})
 })
 $('#formlist .id input').on('blur', function () {
@@ -14,7 +14,7 @@ $('#formlist .id input').on('blur', function () {
 })
 
 $('#formlist .passwd input').on('focus', function () {
-    $(this).css({ background: '#f5f5dc', transform: 'scale(1.2)' })
+    $(this).css({ background: '#f5f5dc', transform: 'scale(1.1)' })
     $('#formlist .passwd label').css({color:'#777777'})
   })
   $('#formlist .passwd input').on('blur', function () {
