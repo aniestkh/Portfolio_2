@@ -102,7 +102,7 @@ myphone monitor : 384*672
   .navmenu .headmenu {
     width: 80%;
     position: absolute;
-    top: 50%;
+    top: 73%;
     /* left: 20%; */
     transform: translateY(-50%);
   }
@@ -127,17 +127,19 @@ myphone monitor : 384*672
 
   #nav .navmenu .membership {
     text-align: center;
-    display: none;
-    transform: translateY(0%);
-    width: 30%;
-    height: 55px;
-    position: absolute;
-    top: 115%;
-    right: 5%;
-    background: #fff;
-    border: 1px solid #000;
-    border-radius: 6px;
-    margin-left: 0;
+        display: none;
+        transform: translateY(0%);
+        width: 30%;
+        height: 55px;
+        position: absolute;
+        top: 115%;
+        right: 5%;
+        background: #fff;
+        border: 1px solid #000;
+        border-radius: 6px;
+        margin-left: 0;
+        align-items: center;
+        justify-content: space-between;
   }
 
   .navmenu .membership.on {
@@ -145,19 +147,26 @@ myphone monitor : 384*672
   }
 
   .navmenu .hide_mem {
-    width: 20%;
+    width: 100%;
+    padding: 2%;
     display: none;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .navmenu .hide_mem.on {
     display: block !important;
   }
 
+.hide_mem:hover {
+  /* transform: scale(1.2); */
+  background-color: #e49ab0;
+  border-radius: 10px;
+}
+
   .membership .sns {
     width: 100%;
     height: 100%;
-    margin-top: 15px;
+    transform: translateY(2%);
     display: none;
     align-items: center;
     justify-content: center;
@@ -225,6 +234,19 @@ myphone monitor : 384*672
       transform: translateY(0px);
     }
   }
+
+  #footer {
+    height: 300px;
+  }
+
+  #footer #footerbox .sns {
+    width: 20%;
+}
+
+  #footer #footerbox .policy {
+    width: 25%;
+}
+
 }
 
 @media screen and (max-width:400px) {
@@ -388,6 +410,7 @@ myphone monitor : 384*672
     border-top-right-radius: 30px;
     position: absolute;
     transition: all 0.5s 0.1s;
+    align-items: normal;
   }
 
   .navmenu .headmenu>li:nth-child(1) {
@@ -418,9 +441,11 @@ myphone monitor : 384*672
     transition: all 0.5s 0.2s;
   }
 
+  /* .navmenu .headmenu>li:hover {
+    transform: scale(1);
+  } */
 
   .headmenu>li.on {
-    transform: translateY(36%) translateX(0);
     transform: translateX(-100%);
   }
 
@@ -531,6 +556,10 @@ myphone monitor : 384*672
     display: none;
   }
 
+  #footer #footerbox .policy {
+    width: 25%;
+}
+
   #footer #footerbox .logo {
     position: absolute;
     top: 35%;
@@ -540,7 +569,7 @@ myphone monitor : 384*672
   }
 
   #footer #footerbox .sns {
-    width: 10%;
+    width: 20%;
     position: absolute;
     top: 5%;
     right: 25%;

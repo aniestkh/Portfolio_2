@@ -189,6 +189,10 @@ homepc monitor : 1366*625
         font-weight: bold;
     }
 
+    #art1_map .map {
+        left: 7%;
+    }
+
     #art1_map .textbx {
         width: 45%;
     }
@@ -214,6 +218,7 @@ homepc monitor : 1366*625
         justify-content: center;
         align-items: center;
         width: 35%;
+        z-index: 9;
     }
 
     .magnifyinggl,
@@ -316,6 +321,11 @@ homepc monitor : 1366*625
     .navmenu .headmenu>li:hover::after {
         display: none;
     }
+
+    .headmenu >li:nth-child(4) {
+        transform: scale(1);
+        font-weight: normal;
+      }
 
     .headmenu>li.on {
         transform: translateY(36%) translateX(0);

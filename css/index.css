@@ -172,22 +172,6 @@ html {
 
 }
 
-/* .navmenu .headmenu>li::after {
-  opacity: 0;
-  content: '';
-  width: 80%;
-  height: 0;
-  border: 1px solid #aaa;
-  position: absolute;
-  bottom: 8%;
-  left: 8%;
-  transition: all 0.5s;
-} */
-
-/* .navmenu .headmenu>li:hover::after {
-  opacity: 1;
-} */
-
 .navmenu .headmenu>li:hover {
   /* transform:scale(1.1); */
   background-color: rgba(96, 118, 240, 0.5);

@@ -18,6 +18,10 @@ homepc monitor : 1366*625
   .menulist .menu {
     top: 13%;
   }
+  
+  .menu .list {
+  overflow-y: auto;
+}
 
   .menu .list>li {
     width: 48%;
