@@ -1,17 +1,17 @@
 // 메뉴 리스트 등장
-$(window).on('resize', function () {
-    var ww = $(window).width()
-    if (ww <= 400) {
-        $('.headmenu >li').addClass('on')
-    }
+// $(window).on('resize', function () {
+//     var ww = $(window).width()
+//     if (ww <= 400) {
+//         $('.headmenu >li').addClass('on')
+//     }
 
-})
-$(window).on('load', function () {
-    var ww = $(window).width()
-    if (ww <= 400) {
-        $('.headmenu >li').addClass('on')
-    }
-})
+// })
+// $(window).on('load', function () {
+//     var ww = $(window).width()
+//     if (ww <= 400) {
+//         $('.headmenu >li').addClass('on')
+//     }
+// })
 
 // 플로팅 이모티콘
 $('.coffeetime').on('click', function () {
@@ -63,9 +63,8 @@ $(window).on('load', function () {
     var timer = setInterval(add, 35)
 })
 
-$('body').on('click', '.membership', function () {
-    $('.membership').removeClass('on')
-    $('.hide_mem').removeClass('on')
+$('body').on('click', 'article',function () {
+    $('.searchbx').removeClass('on')
 })
 
 $('.logo').on('click', function () {
