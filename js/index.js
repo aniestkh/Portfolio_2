@@ -65,6 +65,8 @@ $(window).on('load', function () {
 
 $('body').on('click', 'article',function () {
     $('.searchbx').removeClass('on')
+    $('.membership').removeClass('on')
+    $('.hide_mem').removeClass('on')
 })
 
 $('.logo').on('click', function () {
