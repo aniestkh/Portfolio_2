@@ -207,9 +207,37 @@ myphone monitor : 384*672
 
   .coffeetime {
     display: block;
-    animation: coffeemoving 2s linear forwards;
+    -webkit-animation: coffeemoving 2s linear forwards;
+            animation: coffeemoving 2s linear forwards;
     top: 37%;
     height: 41%;
+  }
+
+  @-webkit-keyframes coffeemoving {
+
+    0% {
+      background-position-x: 130%;
+    }
+
+    25% {
+      background-position-x: 110%;
+      transform: translateY(20px);
+    }
+
+    50% {
+      background-position-x: 90%;
+      transform: translateY(-20px);
+    }
+
+    75% {
+      background-position-x: 70%;
+      transform: translateY(20px);
+    }
+
+    100% {
+      background-position-x: 50%;
+      transform: translateY(0px);
+    }
   }
 
   @keyframes coffeemoving {
@@ -417,28 +445,28 @@ myphone monitor : 384*672
     bottom: 0;
     height: 320px;
     background: #eccfc3;
-    transition: all 0.5s 0.5s;
+    transition: all 0.5s;
   }
 
   .navmenu .headmenu>li:nth-child(2) {
     bottom: 0;
     height: 240px;
     background: #ecb8a5;
-    transition: all 0.5s 0.4s;
+    transition: all 0.5s;
   }
 
   .navmenu .headmenu>li:nth-child(3) {
     bottom: 0;
     height: 160px;
     background: #e49ab0;
-    transition: all 0.5s 0.3s;
+    transition: all 0.5s;
   }
 
   .navmenu .headmenu>li:nth-child(4) {
     bottom: 0;
     height: 80px;
     background: #904c77;
-    transition: all 0.5s 0.2s;
+    transition: all 0.5s;
   }
 
   .navmenu .headmenu>li:nth-child(1).pnt {
@@ -514,7 +542,8 @@ myphone monitor : 384*672
     height: 20%;
     background-size: 100%;
     background-position: 15% !important;
-    animation: coffeemoving 4s linear infinite;
+    -webkit-animation: coffeemoving 4s linear infinite;
+            animation: coffeemoving 4s linear infinite;
   }
 
   .navmenu .hide_mem {
@@ -546,6 +575,12 @@ myphone monitor : 384*672
     opacity: 0.8;
   }
 
+  .rightside .subtext {
+    font-size: 14px;
+    color: #ddd;
+  } 
+
+
   /* footer */
   #footer {
     width: 100%;
@@ -575,7 +610,7 @@ myphone monitor : 384*672
   }
 
   .sns ul li {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     margin: 0 10%;
     text-shadow: 5px 3px 2px #fff;
@@ -583,7 +618,7 @@ myphone monitor : 384*672
 
   #footer #footerbox .policy {
     position: absolute;
-    top: 15%;
+    top: 18%;
     right: 2%;
     /* background: red; */
     width: 50%;
@@ -592,7 +627,7 @@ myphone monitor : 384*672
   }
 
   .policy>div {
-    font-size: 20px;
+    font-size: 25px;
     margin: 0 5%;
     font-weight: bold;
   }
