@@ -97,7 +97,7 @@ myphone monitor : 384*672
 
   .navmenu .searchbx input {
     width: 90%;
-}
+  }
 
   .navmenu .searchbx.on {
     display: block;
@@ -131,19 +131,19 @@ myphone monitor : 384*672
 
   #nav .navmenu .membership {
     text-align: center;
-        display: none;
-        transform: translateY(0%);
-        width: 30%;
-        height: 55px;
-        position: absolute;
-        top: 115%;
-        right: 5%;
-        background: #fff;
-        border: 1px solid #000;
-        border-radius: 6px;
-        margin-left: 0;
-        align-items: center;
-        justify-content: space-between;
+    display: none;
+    transform: translateY(0%);
+    width: 30%;
+    height: 55px;
+    position: absolute;
+    top: 115%;
+    right: 5%;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 6px;
+    margin-left: 0;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .navmenu .membership.on {
@@ -161,11 +161,11 @@ myphone monitor : 384*672
     display: block !important;
   }
 
-.hide_mem:hover {
-  /* transform: scale(1.2); */
-  background-color: #e49ab0;
-  border-radius: 10px;
-}
+  .hide_mem:hover {
+    transform: scale(1);
+    background-color: #e49ab0;
+    border-radius: 10px;
+  }
 
   .membership .sns {
     width: 100%;
@@ -208,7 +208,7 @@ myphone monitor : 384*672
   .coffeetime {
     display: block;
     -webkit-animation: coffeemoving 2s linear forwards;
-            animation: coffeemoving 2s linear forwards;
+    animation: coffeemoving 2s linear forwards;
     top: 37%;
     height: 41%;
   }
@@ -273,11 +273,11 @@ myphone monitor : 384*672
 
   #footer #footerbox .sns {
     width: 20%;
-}
+  }
 
   #footer #footerbox .policy {
     width: 25%;
-}
+  }
 
 }
 
@@ -354,9 +354,9 @@ myphone monitor : 384*672
     transform: scale(1);
   }
 
-#header {
-  position: absolute;
-}
+  #header {
+    position: absolute;
+  }
 
   #nav .logo {
     width: 35%;
@@ -426,7 +426,7 @@ myphone monitor : 384*672
     border-bottom-right-radius: 0px;
     transition: all 0.5s;
   }
-  
+
   .navmenu .headmenu>li {
     left: 0;
     border-top: 1px solid #000;
@@ -467,6 +467,10 @@ myphone monitor : 384*672
     height: 80px;
     background: #904c77;
     transition: all 0.5s;
+  }
+
+  .navmenu .headmenu>li:hover {
+    font-size: 20px;
   }
 
   .navmenu .headmenu>li:nth-child(1).pnt {
@@ -511,7 +515,7 @@ myphone monitor : 384*672
 
   .navmenu .searchbx {
     width: 100%;
-}
+  }
 
   /* section */
   #section {
@@ -543,7 +547,7 @@ myphone monitor : 384*672
     background-size: 100%;
     background-position: 15% !important;
     -webkit-animation: coffeemoving 4s linear infinite;
-            animation: coffeemoving 4s linear infinite;
+    animation: coffeemoving 4s linear infinite;
   }
 
   .navmenu .hide_mem {
@@ -578,7 +582,7 @@ myphone monitor : 384*672
   .rightside .subtext {
     font-size: 14px;
     color: #ddd;
-  } 
+  }
 
 
   /* footer */
@@ -591,7 +595,9 @@ myphone monitor : 384*672
 
   #footer #footerbox .policy {
     width: 25%;
-}
+    top: 6%;
+    right: 48%;
+  }
 
   #footer #footerbox .logo {
     top: 45%;
