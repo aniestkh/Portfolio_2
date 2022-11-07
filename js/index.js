@@ -69,9 +69,9 @@ $('body').on('click', 'article',function () {
     $('.hide_mem').removeClass('on')
 })
 
-$('.logo').on('click', function () {
-    var phonww = $(window).width()
-    var phonht = $(window).height()
-    alert('넓이' + phonww + '높이' + phonht)
+// $('.logo').on('click', function () {
+//     var phonww = $(window).width()
+//     var phonht = $(window).height()
+//     alert('넓이' + phonww + '높이' + phonht)
 
-})
+// })
